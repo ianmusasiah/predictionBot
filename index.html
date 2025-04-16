@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Raffle Win Predictor</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+  <div class="logo">🎯 Raffle Predictor</div>
+  <nav class="nav-menu">
+    <a href="#" class="nav-link active">Home</a>
+    <a href="#" class="nav-link">About</a>
+    <a href="#" class="nav-link">Help</a>
+  </nav>
+</header>
+
+
+  <div class="container">
+    <div class="left-panel">
+      <label>Your Accounts (comma-separated)</label>
+      <input type="text" id="accountNames" value="Main acc, Nahum, Dama" />
+
+      <label>Total Tickets in Raffle</label>
+      <input type="number" id="totalTickets" value="100" />
+
+      <label>Target Win %</label>
+      <input type="number" id="targetPercentage" value="70" />
+
+      <label><input type="checkbox" id="sameAmount" checked /> Same Amount for All</label>
+
+      <button id="autoCalc">⚡ Auto Calculate Based on Target</button>
+
+      <div id="accountContainer"></div>
+    </div>
+
+    <div class="right-panel">
+      <div id="resultsContainer"></div>
+
+      <div id="recommendedContainer" class="recommended-section">
+        <div class="recommended-percentages">
+          <h3>🔢 Recommended Percentages</h3>
+          <label><input type="radio" name="preset-percentage" class="preset-percentage" data-percent="40" /> 🔴 40% - Low win chance</label>
+          <label><input type="radio" name="preset-percentage" class="preset-percentage" data-percent="60" /> 🟠 60% - Medium win chance</label>
+          <label><input type="radio" name="preset-percentage" class="preset-percentage" data-percent="70" checked /> 🟢 70% - Recommended</label>
+          <label><input type="radio" name="preset-percentage" class="preset-percentage" data-percent="85" /> 💚 85% - Higher win chance</label>
+          <label><input type="radio" name="preset-percentage" class="preset-percentage" data-percent="100" /> 💙 100% - Max win chance</label>
+
+          <div class="preset-amounts" style="margin-top: 10px;">
+            <button class="preset-amount active" data-amount="100">100</button>
+            <button class="preset-amount" data-amount="200">200</button>
+            <button class="preset-amount" data-amount="3000">3000</button>
+            <button class="preset-amount" data-amount="500">500</button>
+            <button class="preset-amount" data-amount="1000">1000</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
