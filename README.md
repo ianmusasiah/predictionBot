@@ -1,18 +1,7 @@
 # predictionBot
 
-raffle-predictor/
-│
-├── index.html              # Main HTML file
-├── style.css               # All your CSS styles
-├── script.js               # All your JavaScript logic
-│
-├── assets/                 # (Optional) For images, icons, or fonts
-│   ├── logo.png
-│   └── ...
-│
-└── README.md               # (Optional) Description/documentation for your project
-
-# 🎟️ Raffle Predictor
+📂 Project Structure
+<pre> raffle-predictor/ │ ├── index.html # Main HTML file ├── style.css # All your CSS styles ├── script.js # All your JavaScript logic │ ├── assets/ # (Optional) For images, icons, or fonts │ ├── logo.png │ └── ... │ └── README.md # Description/documentation for your project </pre>
 
 A simple, interactive tool to calculate and visualize the chances of winning a raffle based on ticket allocation and account weighting.
 
